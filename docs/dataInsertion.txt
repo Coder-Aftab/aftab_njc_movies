@@ -1,0 +1,90 @@
+puttnig data into director tables
+
+insert into
+dir_details 
+(dir_name)
+values
+('prabhu deva')
+;
+
+insert into
+dir_details 
+(dir_name)
+values
+('ali abbas zafar')
+;
+
+like this put all director name
+_________________________________________________________
+
+putting data into cast_details table
+
+insert into
+cast_details 
+(cast_lead_actor, cast_lead_actress)
+values
+('salman khan', 'disha patani');
+
+like this enter all actor, actress_name.
+_________________________________________________________
+
+putting data into movie_detaiils
+
+insert into movies_details 
+(mv_cast_id, mv_dir_id, mv_name, mv_rel_dt)
+values
+(1, 1, 'radhe', '2021-05-13');
+
+insert into movies_details 
+(mv_cast_id, mv_dir_id, mv_name, mv_rel_dt)
+values
+(2, 1, 'dabangg 3', '2019-12-20');
+
+insert into movies_details 
+(mv_cast_id, mv_dir_id, mv_name, mv_rel_dt)
+values
+(3, 2, 'bharat', '2019-06-05');
+
+insert into movies_details 
+(mv_cast_id, mv_dir_id, mv_name, mv_rel_dt)
+values
+(4, 3, 'bhoot police', '2021-09-10');
+
+insert into movies_details 
+(mv_cast_id, mv_dir_id, mv_name, mv_rel_dt)
+values
+(5, 8, 'bell botom', '2021-08-19');
+
+insert into movies_details 
+(mv_cast_id, mv_dir_id, mv_name, mv_rel_dt)
+values
+(6, 5, 'toofan', '2021-07-16');
+
+insert into movies_details 
+(mv_cast_id, mv_dir_id, mv_name, mv_rel_dt)
+values
+(7, 6, 'mumbai saga', '2021-03-19');
+
+insert into movies_details 
+(mv_cast_id, mv_dir_id, mv_name, mv_rel_dt)
+values
+(8, 9, 'roohi', '2021-03-11');
+
+___________________________________________
+
+updating cast_details with approprite movie_id
+
+update
+cast_details 
+set
+cast_mv_id = 1
+where
+cast_id=1;
+
+update
+cast_details 
+set
+cast_mv_id = 2
+where
+cast_id=2;
+

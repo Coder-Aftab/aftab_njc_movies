@@ -1,0 +1,38 @@
+creating dir_details table which will contain only director name
+```
+create table dir_details(dir_id bigint GENERATED ALWAYS AS IDENTITY, dir_name character varying, constraint dir_pkey PRIMARY KEY(dir_id));
+```
+
+creating cast_detials table which will contain lead actor and actress names
+```
+create table
+cast_details
+(cast_id bigint GENERATED ALWAYS AS IDENTITY,
+cast_mv_id bigint,
+cast_lead_actor character varying,
+cast_lead_actress character varying, constraint cast_pkey PRIMARY KEY(cast_id), constraint cast_mv_ukey UNIQUE (cast_mv_id));
+
+```
+need to make cast_mv_id as foreign key of mv_id of movies_detail table so will do that after creating movies_detail table
+
+creating table movies_detail which will contain the movie name and release date
+
+```
+create table
+movies_details
+(mv_id bigint GENERATED ALWAYS AS IDENTITY,
+mv_cast_id bigint,
+mv_dir_id bigint,
+mv_name character varying,
+mv_rel_dt DATE,
+constraint mv_pkey PRIMARY KEY(mv_id),
+constraint fk_mv_cast_id_to_cast_id FOREIGN KEY(mv_cast_id) REFERENCES cast_details(cast_id),
+constraint fk_mv_dir_id_to_dir_id FOREIGN KEY(mv_dir_id) REFERENCES dir_details(dir_id));
+
+```
+
+now altering cast_mv_id as foreign key to movies_details.mv_id 
+```
+alter table cast_details 
+add constraint cast_mv_fk FOREIGN KEY(cast_mv_id) REFERENCES movies_details(mv_id);
+```
