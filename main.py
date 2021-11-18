@@ -13,7 +13,7 @@ def main():
     print("Enter Actor Name:")
     actor_name= input().lower()
 
-    print("Enter movie Name:")
+    print("Enter Movie Name:")
     movie_name= input().lower()
 
     #regarding actor detials
@@ -23,7 +23,7 @@ def main():
         print("No data available for given actor name")
         return
     
-    print("actor detials:\n",actor_details)
+    print("Actor details:\n",actor_details)
 
     #regarding movie details
 
@@ -33,7 +33,7 @@ def main():
         print("No data available for given movie name")
         return
     
-    print("movie detials:\n",movie_details)
+    print("Movie details:\n",movie_details)
 
 
 if __name__ == '__main__':

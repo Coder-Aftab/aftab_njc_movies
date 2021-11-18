@@ -28,7 +28,7 @@ values
 like this enter all actor, actress_name.
 _________________________________________________________
 
-putting data into movie_detaiils
+putting data into movies_detaiils
 
 insert into movies_details 
 (mv_cast_id, mv_dir_id, mv_name, mv_rel_dt)
@@ -38,53 +38,123 @@ values
 insert into movies_details 
 (mv_cast_id, mv_dir_id, mv_name, mv_rel_dt)
 values
-(2, 1, 'dabangg 3', '2019-12-20');
+(19, 10, 'dabangg 3', '2019-12-20');
 
 insert into movies_details 
 (mv_cast_id, mv_dir_id, mv_name, mv_rel_dt)
 values
-(3, 2, 'bharat', '2019-06-05');
+(11, 11, 'bharat', '2019-06-05');
 
 insert into movies_details 
 (mv_cast_id, mv_dir_id, mv_name, mv_rel_dt)
 values
-(4, 3, 'bhoot police', '2021-09-10');
+(12, 13, 'bhoot police', '2021-09-10');
 
 insert into movies_details 
 (mv_cast_id, mv_dir_id, mv_name, mv_rel_dt)
 values
-(5, 8, 'bell botom', '2021-08-19');
+(14, 15, 'bell botom', '2021-08-19');
 
 insert into movies_details 
 (mv_cast_id, mv_dir_id, mv_name, mv_rel_dt)
 values
-(6, 5, 'toofan', '2021-07-16');
+(15, 16, 'toofan', '2021-07-16');
 
 insert into movies_details 
 (mv_cast_id, mv_dir_id, mv_name, mv_rel_dt)
 values
-(7, 6, 'mumbai saga', '2021-03-19');
+(16, 17, 'mumbai saga', '2021-03-19');
 
 insert into movies_details 
 (mv_cast_id, mv_dir_id, mv_name, mv_rel_dt)
 values
-(8, 9, 'roohi', '2021-03-11');
+(17, 18, 'roohi', '2021-03-11');
+
+insert into movies_details 
+(mv_cast_id, mv_dir_id, mv_name, mv_rel_dt)
+values
+(13, 14, 'shaadisthan', '2021-06-11');
+
+insert into movies_details 
+(mv_cast_id, mv_dir_id, mv_name, mv_rel_dt)
+values
+(18, 19, 'saina', '2021-03-26');
 
 ___________________________________________
 
 updating cast_details with approprite movie_id
 
-update
-cast_details 
-set
-cast_mv_id = 1
-where
-cast_id=1;
 
 update
 cast_details 
 set
-cast_mv_id = 2
+cast_mv_id = 47
 where
-cast_id=2;
+cast_id=19;
+
+
+update
+cast_details 
+set
+cast_mv_id = 48
+where
+cast_id=11;
+
+update
+cast_details 
+set
+cast_mv_id = 49
+where
+cast_id=12;
+
+update
+cast_details 
+set
+cast_mv_id = 54
+where
+cast_id=13;
+
+
+update
+cast_details 
+set
+cast_mv_id = 50
+where
+cast_id=14;
+
+
+update
+cast_details 
+set
+cast_mv_id = 51
+where
+cast_id=15;
+
+update
+cast_details 
+set
+cast_mv_id = 52
+where
+cast_id=16;
+
+
+update
+cast_details 
+set
+cast_mv_id = 53
+where
+cast_id=17;
+
+update
+cast_details 
+set
+cast_mv_id = 55
+where
+cast_id=18;
+
+
+
+
+
+
 

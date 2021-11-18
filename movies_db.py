@@ -66,9 +66,9 @@ def getMoviesNameForActor(actorName, cur, conn):
 def getDirectorNameForMovie(movie_name, cur, conn):
     
     query="""
-    SELECT dd.dir_name
+    SELECT dd.dir_name, mv_name, mv.mv_rel_dt
     FROM
-    dir_details dd
+    dir_details dd 
     INNER JOIN
     movies_details mv
     ON
